@@ -10,16 +10,19 @@
             text-align: center;
             font-size: 150%;
         }
-        h1 {
-            padding-top: 4em;
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 3em;
+            margin-top: -2.5em;
+            width: 40%;
+            margin-left: -20%;
+            line-height: 1em;
+            text-align: center;
         }
         a:hover {
             opacity: 0.8;
-        }
-
-        nav ul {
-            display: block;
-            list-style-type: none;
         }
         nav ul li {
             display: inline;
@@ -27,15 +30,17 @@
     </style>
 </head>
 <body>
-    <h1>Andrey Martyanov</h1>
-    <nav>
-        <ul>
-            <li><a href="mailto:andrey@martyanov.com"><img src="images/mail.png" alt="Mail me"/></a></li>
-            <li><a href="https://github.com/martyanov"><img src="images/github.png" alt="GitHub"/></a></li>
-            <li><a href="http://www.linkedin.com/in/andreymartyanov"><img src="images/linkedin.png" alt="LinkedIn"/></a></li>
-            <li><a href="https://plus.google.com/u/1/102750883270573479290"><img src="images/gplus.png" alt="Google Plus"/></a></li>
-            <li><a href="https://twitter.com/andreymartyanov"><img src="images/twitter.png" alt="Twitter"/></a></li>
-        </ul>
-    </nav>
+    <div class="content">
+        <h1>Andrey Martyanov</h1>
+        <nav>
+            <ul>
+                <li><a href="mailto:andrey@martyanov.com"><img src="images/mail.png" alt="Mail me"/></a></li>
+                <li><a href="https://github.com/martyanov"><img src="images/github.png" alt="GitHub"/></a></li>
+                <li><a href="http://www.linkedin.com/in/andreymartyanov"><img src="images/linkedin.png" alt="LinkedIn"/></a></li>
+                <li><a href="https://plus.google.com/u/1/102750883270573479290"><img src="images/gplus.png" alt="Google Plus"/></a></li>
+                <li><a href="https://twitter.com/andreymartyanov"><img src="images/twitter.png" alt="Twitter"/></a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
