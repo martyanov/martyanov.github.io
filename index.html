@@ -1,34 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Andrey Martyanov</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="canonical" href="https://martyanov.com" />
-    <link rel="stylesheet" href="css/main.css" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrey Martyanov personal page.">
+
+    <link rel="canonical" href="https://martyanov.dev">
+    <link rel="icon" href="data:,">
+
+    <style>
+      *, *::before, *::after {
+          box-sizing: border-box;
+      }
+
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: "Hack", "Noto Sans Mono", "Roboto Mono", monospace;
+          display: flex;
+          flex-direction: column;
+          line-height: 1.5;
+          font-weight: 700;
+          color: #fff;
+          background: #222;
+          min-height: 100vh;
+          min-height: 100dvh;
+          align-items: center;
+          justify-content: center;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      h1 {
+          overflow-wrap: break-word;
+      }
+
+      ul {
+          list-style-type: none;
+      }
+
+      ul[role='list'] {
+          list-style: none;
+      }
+
+      li {
+          display: inline-block;
+          padding: 3px;
+      }
+
+      a {
+          color: #fff;
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+          text-decoration-color: #fff;
+          text-decoration-style: solid;
+          text-decoration-thickness: 3px;
+      }
+    </style>
   </head>
-  <body class="loading">
-    <div id="wrapper">
-      <div id="bg"></div>
-      <div id="main">
-        <header id="header">
-          <h1>Andrey Martyanov</h1>
-          <p>Software Engineer</p>
-          <nav>
-            <ul>
-              <li><a href="https://github.com/martyanov" class="icon fa-github"><span class="label">Github</span></a></li>
-              <li><a href="https://linkedin.com/in/andreymartyanov" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-              <li><a href="mailto:andrey@martyanov.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-            </ul>
-          </nav>
-        </header>
-        <footer id="footer"></footer>
-      </div>
-    </div>
-    <script>
-      window.onload = function() { document.body.className = ''; }
-      window.ontouchmove = function() { return false; }
-      window.onorientationchange = function() { document.body.scrollTop = 0; }
-    </script>
+  <body>
+    <h1>Andrey Martyanov</h1>
+    <ul>
+      <li>
+        <a href="https://github.com/martyanov" title="GitHub" target="_blank">[GitHub]</a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/andreymartyanov" title="LinkedIn" target="_blank">[LinkedIn]</a>
+      </li>
+      <li>
+        <a href="mailto:andrey@martyanov.dev" title="andrey@martyanov.dev" target="_blank">[Email]</a>
+      </li>
+    </ul>
   </body>
 </html>
